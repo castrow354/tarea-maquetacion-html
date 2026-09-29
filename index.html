@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de Maquetación HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">MyLogo</div>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="articles-section" aria-label="Artículos destacados">
+            <div class="articles-grid">
+                
+                <article class="article-card">
+                    <!-- Se corrigió la URL del marcador para que renderice el cuadro de 80x80 -->
+                    <img src="https://placeholder.com" alt="Marcador de posición 80 por 80 del Artículo 1" class="article-img">
+                    <h2>Article Title</h2>
+                    <p>Article content goes here. This is a sample article content.</p>
+                </article>
+
+                <article class="article-card">
+                    <!-- Se corrigió la URL del marcador para que renderice el cuadro de 80x80 -->
+                    <img src="https://placeholder.com" alt="Marcador de posición 80 por 80 del Artículo 2" class="article-img">
+                    <h2>Article Title</h2>
+                    <p>Article content goes here. This is a sample article content.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Student Scores</h2>
+            <table class="scores-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>85</td>
+                        <td>95</td>
+                        <td>180</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3">Total</th>
+                        <td>350</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+
+</body>
+</html>
